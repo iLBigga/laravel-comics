@@ -1,1 +1,12 @@
-//
+@import './main.scss';
+@import './header.scss';
+@import './footer.scss';
+
+
+@import './partials/_variables' ;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,167 @@
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #1C1C1C;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  position: relative;
+}
+
+main .jumbotron {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+
+main .button {
+  padding: 0.6rem 4rem;
+  background-color: #0282F9;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+main .between {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+}
+
+main .grid {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+main .card {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+main .card div {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+nav figure {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 150px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 100%;
+}
+
+ul li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background-color: #0282F9;
+}
+
+ul li:hover {
+  color: #0282F9;
+}
+
+footer .footer-nav {
+  background-color: #0282F9;
+}
+
+footer .footer-list {
+  background-size: cover;
+}
+
+footer .footer-list .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+footer .footer-list .container .main-list {
+  display: flex;
+  padding: 4rem 0;
+  gap: 100px;
+}
+
+footer .footer-list .container h4 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem 0;
+}
+
+footer .footer-list .container li {
+  line-height: 1.8rem;
+  font-size: 1rem;
+  color: #959595;
+}
+
+footer .footer-contacts {
+  background-color: #303030;
+  padding: 2.19rem;
+}
+
+footer .footer-contacts .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-contacts .sign-up-button {
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem;
+  border: 2px solid #0282F9;
+}
+
+footer .footer-contacts .footer-social-link {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer .footer-contacts .footer-social-link h3 {
+  color: #0282F9;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

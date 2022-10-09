@@ -1,0 +1,68 @@
+footer {
+    .footer-nav {
+        background-color: $dc-blue;
+    }
+
+    .footer-list {
+        // background-image: url("../images/footer-bg.jpg");
+        background-size: cover;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            // background-image: url("../images/dc-logo-bg.png");
+            background-repeat: no-repeat;
+            background-position: center right;
+
+            .main-list {
+                display: flex;
+                padding: 4rem 0;
+                gap: 100px;
+            }
+
+            h4 {
+                font-size: 1.7rem;
+                text-transform: uppercase;
+                color: white;
+                padding: 1rem 0;
+            }
+
+            li {
+                line-height: 1.8rem;
+                font-size: 1rem;
+                color: $footer-text-color;
+            }
+        }
+    }
+
+    .footer-contacts {
+        background-color: $footer-contacts-bg;
+        padding: 2.19rem;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sign-up-button {
+            text-transform: uppercase;
+            color: white;
+            padding: 1rem;
+            border: 2px solid $dc-blue;
+        }
+
+        .footer-social-link {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            h3 {
+                color: $dc-blue;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

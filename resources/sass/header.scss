@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+
+    figure {
+        display: flex;
+        align-items: center;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 150px;
+
+    li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-transform: uppercase;
+        cursor: pointer;
+        height: 100%;
+
+        &:hover::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 4px;
+            background-color: $dc-blue;
+        }
+
+        &:hover {
+            color: $dc-blue;
+        }
+    }
+}
