@@ -1,7 +1,5 @@
+
 <footer>
-    <div class="footer-nav">
-        <MerchandiseList/>
-    </div>
     <div class="footer-list">
         <div class="container">
             <div class="main-list">
@@ -60,19 +58,19 @@
                 <ul class="footer-social-link">
                     <h3>follow us</h3>
                     <li>
-                        <a href="#"><img src="../assets/footer-facebook.png" alt="" /></a>
+                        <a href="#"><img src="../images/footer-facebook.png" alt="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../assets/footer-twitter.png" alt="" /></a>
+                        <a href="#"><img src="../images/footer-twitter.png" alt="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../assets/footer-youtube.png" alt="" /></a>
+                        <a href="#"><img src="../images/footer-youtube.png" alt="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../assets/footer-periscope.png" alt="" /></a>
+                        <a href="#"><img src="../images/footer-pinterest.png" alt="" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../assets/footer-periscope.png" alt="" /></a>
+                        <a href="#"><img src="../images/footer-periscope.png" alt="" /></a>
                     </li>
                 </ul>
             </div>

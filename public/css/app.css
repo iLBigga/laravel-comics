@@ -3,7 +3,6 @@ main {
   flex-direction: column;
   background-color: #1C1C1C;
 }
-
 main .container {
   display: flex;
   flex-direction: column;
@@ -11,13 +10,6 @@ main .container {
   padding: 4rem 0;
   position: relative;
 }
-
-main .jumbotron {
-  height: 500px;
-  width: 100%;
-  background-size: cover;
-}
-
 main .button {
   padding: 0.6rem 4rem;
   background-color: #0282F9;
@@ -25,7 +17,6 @@ main .button {
   font-weight: bold;
   color: white;
 }
-
 main .between {
   position: absolute;
   top: 0;
@@ -34,44 +25,87 @@ main .between {
   padding: 1rem 2rem;
   font-size: 1.7rem;
 }
-
 main .grid {
   display: grid;
   padding: 1rem 0;
   grid-template-columns: repeat(6, 1fr);
 }
-
 main .card {
   padding: 1rem;
   text-align: center;
   color: white;
 }
-
 main .card div {
   padding: 1rem;
   text-transform: uppercase;
 }
 
-nav {
+.merch {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.merch ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.merch img {
+  width: 45px;
+}
+.merch a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.merch_list {
+  background-color: #0282F9;
+}
+.merch_list .container {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+.merch_list ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.merch_list img {
+  width: 45px;
+}
+.merch_list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+header nav {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
 }
-
-nav figure {
+header nav figure {
   display: flex;
   align-items: center;
 }
-
-ul {
+header ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   height: 150px;
 }
-
-ul li {
+header ul li {
   display: flex;
   align-items: center;
   position: relative;
@@ -79,8 +113,7 @@ ul li {
   cursor: pointer;
   height: 100%;
 }
-
-ul li:hover::after {
+header ul li:hover::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -89,71 +122,65 @@ ul li:hover::after {
   height: 4px;
   background-color: #0282F9;
 }
-
-ul li:hover {
+header ul li:hover {
   color: #0282F9;
 }
-
-footer .footer-nav {
-  background-color: #0282F9;
-}
-
-footer .footer-list {
+header .jumbotron {
+  height: 500px;
+  width: 100%;
+  background-image: url("../images/jumbotron.jpg");
   background-size: cover;
 }
 
+footer .footer-list {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+}
 footer .footer-list .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  background-image: url("../images/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
 }
-
 footer .footer-list .container .main-list {
   display: flex;
   padding: 4rem 0;
   gap: 100px;
 }
-
 footer .footer-list .container h4 {
   font-size: 1.7rem;
   text-transform: uppercase;
   color: white;
   padding: 1rem 0;
 }
-
 footer .footer-list .container li {
   line-height: 1.8rem;
   font-size: 1rem;
   color: #959595;
 }
-
 footer .footer-contacts {
   background-color: #303030;
   padding: 2.19rem;
 }
-
 footer .footer-contacts .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer .footer-contacts .sign-up-button {
   text-transform: uppercase;
   color: white;
   padding: 1rem;
   border: 2px solid #0282F9;
 }
-
 footer .footer-contacts .footer-social-link {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
-
 footer .footer-contacts .footer-social-link h3 {
   color: #0282F9;
   text-transform: uppercase;
@@ -165,3 +192,24 @@ footer .footer-contacts .footer-social-link h3 {
   padding: 0;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+ul, ol, menu {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}

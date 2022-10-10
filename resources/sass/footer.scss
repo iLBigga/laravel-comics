@@ -1,10 +1,6 @@
 footer {
-    .footer-nav {
-        background-color: $dc-blue;
-    }
-
     .footer-list {
-        // background-image: url("../images/footer-bg.jpg");
+        background-image: url("../images/footer-bg.jpg");
         background-size: cover;
 
         .container {
@@ -12,7 +8,7 @@ footer {
             align-items: center;
             justify-content: space-between;
             gap: 3rem;
-            // background-image: url("../images/dc-logo-bg.png");
+            background-image: url("../images/dc-logo-bg.png");
             background-repeat: no-repeat;
             background-position: center right;
 
@@ -46,7 +42,7 @@ footer {
             justify-content: space-between;
             align-items: center;
         }
-
+ 
         .sign-up-button {
             text-transform: uppercase;
             color: white;

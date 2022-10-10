@@ -3,23 +3,9 @@
 
 @section('content')
 
-<main class="main-bg">
-    <div class="jumbotron"></div>
-    <div class="container">
-        <div class="button between" href="#">current 'series''</div>
-        <ComicsCards/>
-        <a class="button" href="#">load more</a>
-    </div>
 
+<h1>Welcome!</h1>
+<p>Benvenuti in DC Comics!</p>
 
-    <div class="grid">
-        @foreach ($comics as $comic)
-        <article class="card">
-            <img :src="{{$comic['thumb']}}" :alt="{{$comic['series']}}">
-            <div>{{$comic['series']}}</div>
-        </article>   
-        @endforeach
-    </div>
-</main>
     
 @endsection
