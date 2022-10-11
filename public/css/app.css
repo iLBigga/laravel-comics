@@ -186,6 +186,102 @@ footer .footer-contacts .footer-social-link h3 {
   text-transform: uppercase;
 }
 
+main .gallery {
+  height: 100px;
+  background-color: #0282F9;
+  position: relative;
+}
+main .gallery .container {
+  position: relative;
+}
+main .gallery .cover {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  border: 1px solid white;
+}
+main .gallery .cover img {
+  display: block;
+}
+main .comic {
+  background-color: white;
+}
+main .comic .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 70px;
+}
+main .comic .row .col-8 {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .comic .row .col-4 {
+  flex-basis: 20%;
+}
+main .comic .title {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+main .comic .price_bar {
+  display: flex;
+  background-color: #55BA59;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+main .comic .price_bar .price_left {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+main .comic .price_bar .price_left .status {
+  color: #BAFD91;
+  text-transform: uppercase;
+}
+main .comic .price_bar .price_left .price {
+  color: white;
+}
+main .comic .price_bar .price_right {
+  border-left: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+main .comic .price_bar .price_right input {
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+main .comic .adv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main .comic .adv span {
+  color: #555555;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+main .comic .description {
+  color: #555555;
+  line-height: 25px;
+  font-weight: 500;
+}
+main .info {
+  background-color: #F6F6F6;
+  display: flex;
+}
+main .info .row {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

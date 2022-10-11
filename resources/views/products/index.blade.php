@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
-@php
-    
+@php   
    $merchList = [
         [
             'img' => '../images/buy-comics-digital-comics.png',
@@ -40,15 +39,19 @@
             <div class="button between" href="#">current 'series'</div>
             <div class="grid">
                 @foreach ($comics as $comic)
-                <article class="card">
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                    <div>{{$comic['title']}}</div>
-                </article>   
+                <a href="{{ route('comic', ['id' => $loop->index]) }}">
+                    <article class="card">
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                        <div>{{$comic['title']}}</div>
+                    </article>   
+                </a>
                 @endforeach
             </div>
             <a class="button" href="#">load more</a>
         </div>
     </section>
+
+
 
     <section class="merch_list">
         <div class="container">
@@ -64,8 +67,6 @@
             </ul>
         </div>
     </section>
-
-
 
     
 @endsection

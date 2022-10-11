@@ -1,0 +1,120 @@
+main{
+
+    .gallery{
+        height: 100px;
+        background-color: $dc-blue;
+        position: relative;
+
+        .container{
+            position: relative;
+        }
+
+        .cover{
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            border: 1px solid white;
+
+                img{
+                    display: block;
+                }
+        }
+    } 
+
+    .comic {
+        background-color: white;
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 70px;
+
+            .col-8{
+                flex-basis: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .col-4{
+                flex-basis: 20%;
+            }
+        }
+
+        .title{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .price_bar{
+            display: flex;
+            background-color: $green;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+
+            .price_left{
+                display: flex;
+                flex-grow: 1;
+                padding: 20px;
+                justify-content: space-between;
+                font-weight: bold;
+
+                .status{
+                    color: $light-green;
+                    text-transform: uppercase;
+                }
+
+                .price{
+                    color: white;
+                }
+            }
+
+            .price_right{
+                border-left: 1px solid black;
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+
+                input{
+                    border: 0;
+                    background-color: transparent;
+                    color: white;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .adv{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            span {
+                color: $description;
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+        }
+
+        .description{
+            color: $description;
+            line-height: 25px;
+            font-weight: 500;
+        }
+    }
+
+    .info {
+        background-color: $comic-info-bg;
+        display: flex;
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+}
