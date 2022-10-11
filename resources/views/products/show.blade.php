@@ -46,7 +46,7 @@
 <section class="info">
     <div class="container">
         <div class="row">
-            <div>
+            <div class="col-6">
                 <h4>Talent</h4>
                 @foreach ($comic['artists'] as $artist)
                 <span>{{$artist}}</span>           
@@ -55,7 +55,7 @@
                 <span>{{$writer}}</span>           
                 @endforeach
             </div>
-            <div>
+            <div class="col-6">
                 <h4>Spec</h4>
                 <span>{{$comic['series']}}</span>
                 <span>{{$comic['price']}}</span>

@@ -7,12 +7,13 @@ main{
 
         .container{
             position: relative;
+            height: 100%;
         }
 
         .cover{
             position: absolute;
-            bottom: 40px;
             left: 0;
+            bottom: 20px;
             border: 1px solid white;
 
                 img{
@@ -22,6 +23,7 @@ main{
     } 
 
     .comic {
+        padding: 120px;
         background-color: white;
 
         .row{
@@ -109,10 +111,15 @@ main{
     .info {
         background-color: $comic-info-bg;
         display: flex;
+        padding: 100px;
 
         .row{
             display: flex;
             justify-content: space-between;
+        }
+
+        .col-6{
+            flex-basis: 50%;
         }
     }
 

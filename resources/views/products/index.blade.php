@@ -28,7 +28,6 @@
             'href' => '#',
         ],
     ];
-
 @endphp
 
 @section('content')

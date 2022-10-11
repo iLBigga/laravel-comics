@@ -3,21 +3,21 @@ main {
   flex-direction: column;
   background-color: #1C1C1C;
 }
-main .container {
+main .comics .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
   position: relative;
 }
-main .button {
+main .comics .button {
   padding: 0.6rem 4rem;
   background-color: #0282F9;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
 }
-main .between {
+main .comics .between {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,17 +25,17 @@ main .between {
   padding: 1rem 2rem;
   font-size: 1.7rem;
 }
-main .grid {
+main .comics .grid {
   display: grid;
   padding: 1rem 0;
   grid-template-columns: repeat(6, 1fr);
 }
-main .card {
+main .comics .card {
   padding: 1rem;
   text-align: center;
   color: white;
 }
-main .card div {
+main .comics .card div {
   padding: 1rem;
   text-transform: uppercase;
 }
@@ -193,17 +193,19 @@ main .gallery {
 }
 main .gallery .container {
   position: relative;
+  height: 100%;
 }
 main .gallery .cover {
   position: absolute;
-  bottom: 40px;
   left: 0;
+  bottom: 20px;
   border: 1px solid white;
 }
 main .gallery .cover img {
   display: block;
 }
 main .comic {
+  padding: 120px;
   background-color: white;
 }
 main .comic .row {
@@ -276,10 +278,14 @@ main .comic .description {
 main .info {
   background-color: #F6F6F6;
   display: flex;
+  padding: 100px;
 }
 main .info .row {
   display: flex;
   justify-content: space-between;
+}
+main .info .col-6 {
+  flex-basis: 50%;
 }
 
 * {
